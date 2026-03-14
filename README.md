@@ -1,5 +1,5 @@
 # NightsynPro
-**NightsynPro** is a script for automations and Advance from other any other scripts
+**NightsynPro** a powerful and easy-to-use Roblox script designed to enhance gameplay with smooth performance and useful features.
 
 ## Features
 - Cheap
