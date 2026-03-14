@@ -6,6 +6,7 @@
 - Advance
 - Clean UI
 - Undetected
+- One Time Perchase
 
 ### Working on
 - Blox Fruits
