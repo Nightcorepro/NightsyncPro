@@ -1,9 +1,6 @@
 local scripts = {
-    [0] = { -- Re:Level
-        
-    },
     [994732206] = { -- Blox Fruits
-       "",
+       "loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/BrlLMOhOlQX2AjJl/raw?accessKey=Unknown", true))()",
     }
 }
 
