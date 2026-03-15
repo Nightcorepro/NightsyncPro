@@ -1,6 +1,6 @@
 local scripts = {
     [994732206] = { -- Blox Fruits
-       "loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/BrlLMOhOlQX2AjJl/raw?accessKey=Unknown", true))()",
+       "loadstring(game:HttpGet("https://raw.githubusercontent.com/Nightcorepro/NightsyncPro/refs/heads/main/Main.luau", true))()",
     }
 }
 
