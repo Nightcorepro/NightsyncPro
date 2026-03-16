@@ -8,7 +8,7 @@
 - Undetected
 - One Time Perchase
 
-### Working on
+### Supported Games
 - Blox Fruits
 - More Soon
 
