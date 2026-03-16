@@ -2,11 +2,16 @@
 **NightsynPro** a powerful and easy-to-use Roblox script designed to enhance gameplay with smooth performance and useful features.
 
 ## Features
+- Safe
 - Cheap
 - Advance
+- Most Stable
+- Easy To Use
 - Clean UI
 - Undetected
 - One Time Perchase
+- More Features
+- 24/7 Support
 
 ### Supported Games
 - Blox Fruits
