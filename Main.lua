@@ -57,8 +57,8 @@ WindUI:Notify({
 Window:EditOpenButton({ --Button to open/close the UI
     Title = "",
     Icon = "rbxassetid://93446863308514",
-    CornerRadius = UDim.new(0,16),
-    StrokeThickness = 2,
+    CornerRadius = UDim.new(1, 0),
+    StrokeThickness = 3,
     Color = ColorSequence.new( -- gradient
         Color3.fromHex("#ffffff"), 
         Color3.fromHex("#ffffff")
@@ -70,26 +70,79 @@ Window:EditOpenButton({ --Button to open/close the UI
 
 Window:SetToggleKey(Enum.KeyCode.N) --Keybind to open/close the UI
 
----[Tab: About]---
-local Tab = Window:Tab({
-    Title = "About",
-    Icon = "info", -- optional
-    Locked = false,
-})
-
-Tab:Select() -- Select Tab
-
----[Tab: Main]---
-local Tab = Window:Tab({
-    Title = "Main",
-    Icon = "house", -- optional
-    Locked = false,
-})
-
 ---[Tags]---
 Window:Tag({
     Title = "v1.0.0",
     Icon = "github",
     Color = Color3.fromHex("#f71302"),
     Radius = 13, -- from 0 to 13
+})
+
+Window:Tag({
+    Title = "discord.gg/ZDzce24QEw",
+    Icon = "link",
+    Color = Color3.fromHex("#ffffff"),
+    Radius = 13, -- from 0 to 13
+})
+
+---[Tab: About]---
+local AboutTab = Window:Tab({
+    Title = "About",
+    Icon = "info", -- optional
+    Locked = false,
+})
+
+local Paragraph = AboutTab:Paragraph({
+    Title = "About NightSyncPro",
+    Desc = "NightSyncPro is a powerful Roblox script designed to enhance your gaming experience. With a user-friendly interface and a variety of features, it allows you to customize your gameplay and access exclusive content. Whether you're looking for new skins, enhanced abilities, or just want to explore the game in a new way, NightSyncPro has got you covered. Join our community and discover all the amazing possibilities that await you with NightSyncPro!",
+    Color = "Red",
+    Image = "",
+    ImageSize = 30,
+    Thumbnail = "",
+    ThumbnailSize = 80,
+    Locked = false,
+})
+
+AboutTab:Select() -- Select About Tab
+
+Window:Divider()
+
+---[Tab: Main]---
+local MainTab = Window:Tab({
+    Title = "Main",
+    Icon = "house", -- optional
+    Locked = false,
+})
+
+Window:Divider()
+
+---[Tab: UI Settings]---
+local UITab = Window:Tab({
+    Title = "UI Settings",
+    Icon = "frame", -- optional
+    Locked = false,
+})
+
+local Dropdown = UITab:Dropdown({
+    Title = "Theme",
+    Desc = "Select your preferred theme.",
+    Values = { "Dark", "Light", "Rose", "Plant", "Red", "Indigo", "Sky", "Violet", "Amber", "Emerald", "Midnight", "Crimson", "Cotton Candy", "Rainbow" },
+    Value = "Dark", -- default value
+    Callback = function(option) 
+        Window:SetTheme(option) -- set the theme of the UI
+    end
+})
+
+WindUI:AddTheme({
+    Name = "Cotton Candy", -- theme name
+    
+    Accent = Color3.fromHex("#ec4899"),
+    Dialog = Color3.fromHex("#2d1b3d"),
+    Outline = Color3.fromHex("#f9a8d4"),
+    Text = Color3.fromHex("#fdf2f8"),
+    Placeholder = Color3.fromHex("#8a5fd3"),
+    Background = Color3.fromHex("#1a0b2e"),
+    Slider = Color3.fromHex("#d946ef"),
+    Button = Color3.fromHex("#d946ef"),
+    Icon = Color3.fromHex("#06b6d4"),
 })
